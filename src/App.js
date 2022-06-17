@@ -1,9 +1,9 @@
 import './App.css';
-
+import Profile from './components/Home/Profile';
 function App() {
   return (
     <div className="App">
-     <h1>Portfolio</h1>
+      <Profile />
     </div>
   );
 }
