@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb{
   color:azure;
   border: 2px solid linen;
   font-size: 12px;
-  background-color: #1f2235;
+  background-color: #444c80;
 }
 /* @media only screen and (max-width: 414 px) {
   .primary-btn{
@@ -116,12 +116,9 @@ body::-webkit-scrollbar-thumb{
   color:azure;
 
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: #ce6342;
 }
-.highlighted-btn:hover{
-  color: aliceblue;
-  border: 2px solid #ff5823;
-}
+ 
 @media only screen and (max-width: 568px) {
   .highlited-btn{
     z-index: -900;

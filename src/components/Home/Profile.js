@@ -1,4 +1,5 @@
 import React from "react";
+import './Profile.css';
 import Typical from "react-typical";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -7,7 +8,7 @@ import { pink } from "@mui/material/colors";
 
 const Profile = () => {
   return (
-    <div className="profile-contaiber">
+    <div className="profile-container">
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
