@@ -1,4 +1,4 @@
-@font-face{
+/* @font-face{
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: normal;
@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb{
   }
 } */
 
-.primary-btn:hover{
+/* .primary-btn:hover{
   color: aliceblue;
   border: 2px solid #ff5823;
   background-color: #1f2235;
@@ -133,4 +133,4 @@ body::-webkit-scrollbar-thumb{
   opacity: 0;
   transform: translateY(80px);
   transition: all 0.8s ease;
-}
+}  */
