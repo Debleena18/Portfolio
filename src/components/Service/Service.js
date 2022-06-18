@@ -20,6 +20,7 @@ const Service = () => {
         <a href={Resume} download="Debleena resume.pdf">
           <button className="button s-button">Download CV</button>
         </a>
+        <button className="button s-button">Hire Me</button>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       <div className="cards">
