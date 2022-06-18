@@ -60,16 +60,44 @@
 .i-right > :nth-child(1) {
   transform: scale(0.69);
   left: -15%;
-  top: -9%;
+  top: -10%;
 }
 .i-right > :nth-child(2) {
-  top: -4.6rem;
+  top: -5.6rem;
   transform: scale(0.67);
   left: -3rem;
 }
-.i-right > :nth-child(3) {
+/* .i-right > :nth-child(3) {
+  margin-top: 100px;
+  border: 0;
+  width: 200px;
+  background-blend-mode: lighten;
+  height: 200px;
   transform: scale(1.4);
   left: 28%;
+} */
+.profile-picture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px var(--white);
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 100px;
+}
+.profile-picture-background{
+  height: 92%;
+  width: 92%;
+  background-image: url("../../assets/img/Image.png");
+  background-size: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-picture-background:hover{
+  transform: scale(1.07);
+  transition: 1s ease-out;
 }
 .i-right > :nth-child(4) {
   transform: scale(0.62);
