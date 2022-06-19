@@ -5,6 +5,7 @@ import Service from './components/Service/Service';
 import Experience from './components/Experience/Experience';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 // import Works from './components/Works/Works';
 // import Testimonials from './components/Testimonials/Testimonial';
 
@@ -19,6 +20,7 @@ function App() {
       <Portfolio />
       {/* <Testimonials /> */}
       <Contact />
+      <Footer />
     </div>
   );
 }
