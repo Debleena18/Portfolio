@@ -5,13 +5,13 @@ import Fiverr from "../../assets/img/fiverr.png";
 import Amazon from "../../assets/img/amazon.png";
 import Shopify from "../../assets/img/Shopify.png";
 import TCS from "../../assets/img/TCS.png";
-// import { themeContext } from "../../Context";
+import { themeContext } from "../../Context";
 // import { motion } from "framer-motion";
 // import {Link} from 'react-scroll'
 const Works = () => {
   // context
-//   const theme = useContext(themeContext);
-//   const darkMode = theme.state.darkMode;
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
 
   // transition
   return (
@@ -20,7 +20,7 @@ const Works = () => {
       <div className="w-left">
         <div className="awesome">
           {/* dark Mode */}
-          <span>
+          <span style={{ color: darkMode ? "white" : "" }}>
             Works for All these
           </span>
           <span>Brands & Clients</span>

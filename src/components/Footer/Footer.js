@@ -4,9 +4,9 @@ import Wave from "../../assets/img/wave.png";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import Insta from "@iconscout/react-unicons/icons/uil-instagram";
-import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
-import Gitub from "@iconscout/react-unicons/icons/uil-github";
+// import Insta from "@iconscout/react-unicons/icons/uil-instagram";
+// import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
+// import Gitub from "@iconscout/react-unicons/icons/uil-github";
 
 const Footer = () => {
   return (
