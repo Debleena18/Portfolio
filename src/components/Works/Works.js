@@ -6,7 +6,7 @@ import Amazon from "../../assets/img/amazon.png";
 import Shopify from "../../assets/img/Shopify.png";
 import TCS from "../../assets/img/TCS.png";
 import { themeContext } from "../../Context";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 // import {Link} from 'react-scroll'
 const Works = () => {
   // context
@@ -46,13 +46,13 @@ const Works = () => {
         {/* right side */}
       </div>
       <div className="w-right">
-        {/* <motion.div
+        <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
           viewport={{ margin: "-40px" }}
           transition={{ duration: 3.5, type: "spring" }}
           className="w-mainCircle"
-        > */}
+        >
           <div className="w-secCircle">
             <img src={Upwork} alt="" />
           </div>
@@ -68,7 +68,7 @@ const Works = () => {
           <div className="w-secCircle">
             <img src={TCS} alt="" />
           </div>
-        {/* </motion.div> */}
+        </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
