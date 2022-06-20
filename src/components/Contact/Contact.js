@@ -7,9 +7,11 @@ const Contact = () => {
   const darkMode = theme.state.darkMode;
   const form = useRef();
   const [done, setDone] = useState(false)
+  // const [reset, setReset] = useState(false)
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // logged into the emailjs documents
     emailjs
       .sendForm(
         "service_mnlpocp",
@@ -21,7 +23,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
+          // form.reset();
         },
         (error) => {
           console.log(error.text);

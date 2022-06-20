@@ -25,9 +25,9 @@ const Service = () => {
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>service</span>
         <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
+          I have worked for our client ASDA (UK retail unit of Walmart)
           <br />
-          ispum is simpley dummy text of printing
+          and have successfully delivered the projects.
         </spane>
         <a href={Resume} download="Debleena resume.pdf">
           <button className="button s-button">Download CV</button>
@@ -47,8 +47,8 @@ const Service = () => {
         <div style={{left:'20rem'}}>
           <Card
             emoji={Glasses}
-            heading={"Design"}
-            detail={"Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Development"}
+            detail={"Developed TMS App, BWS Markdown App for our client"}
           />
           </div>
         </motion.div>
@@ -61,8 +61,8 @@ const Service = () => {
         <div style={{top:'12rem', left:'4rem'}}>
           <Card
             emoji={HeartEmoji}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, ReactJs"}
+            heading={"Skills"}
+            detail={"Html, Css, JavaScript, ReactJs, SQL"}
           />
           </div>
         </motion.div>
@@ -75,9 +75,9 @@ const Service = () => {
          <div style={{top:'19rem', left:'20rem'}}>
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Database Migration"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "Worked on the Db Migration of NewsFlash App from Maria Db to Axure SQL and successfully deliver it."
             }
             color="rgba(252, 166, 31, 0.45)"
           />
