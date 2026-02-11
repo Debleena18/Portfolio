@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Intro from './components/Intro/Intro';
 import Service from './components/Service/Service';
-import Experience from './components/Experience/Experience';
+import ExperienceTimeline from './components/Experience/ExperienceTimeline';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
@@ -26,7 +26,7 @@ function App() {
       <Navbar />
       <Intro />
       <Service />
-      <Experience />
+      <ExperienceTimeline />
       {/* <Works /> */}
       <Portfolio />
       {/* <Testimonials /> */}

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -6,9 +6,44 @@ import Ecommerce from "../../assets/img/ecommerce.png";
 import NetflixClone from "../../assets/img/NetflixClone.png";
 import GymApp from "../../assets/img/GymApp.png";
 import { themeContext } from "../../Context";
+import PortfolioModal from "./PortfolioModal";
+
+interface ProjectData {
+  img: string;
+  title: string;
+  description: string;
+  tech: string[];
+  link: string;
+}
+
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  const [selectedProject, setSelectedProject] = useState<ProjectData | null>(null);
+
+  const projects: ProjectData[] = [
+    {
+      img: Ecommerce,
+      title: "E-Commerce App",
+      description: "A full-featured e-commerce platform with cart management, payment gateway integration, and user authentication. Built to handle high traffic and secure transactions.",
+      tech: ["React", "Redux", "Node.js", "Stripe"],
+      link: "https://github.com/Debleena18", // Replace with real link if available
+    },
+    {
+      img: GymApp,
+      title: "Fitness Tracker",
+      description: "A comprehensive fitness application allowing users to track workouts, monitor progress, and access a library of exercises. Features real-time data visualization.",
+      tech: ["React", "Material UI", "RapidAPI"],
+      link: "https://gym-master1c2691.netlify.app/",
+    },
+    {
+      img: NetflixClone,
+      title: "Streaming Service Clone",
+      description: "A responsive clone of a popular streaming service. Implements lazy loading, infinite scrolling, and movie trailers integration.",
+      tech: ["React", "TMDB API", "Firebase"],
+      link: "https://netflix-movieapp.web.app/",
+    },
+  ];
 
   return (
     <div className="portfolio" id="portfolio">
@@ -23,47 +58,28 @@ const Portfolio = () => {
         grabCursor={true}
         className="portfolio-slider"
       >
-        <SwiperSlide>
-          <img
-            src={Ecommerce}
-            alt=""
-            width="400rem"
-            height="400rem"
-            style={{
-              filter: "drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))",
-              borderRadius: "15px",
-            }}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="https://gym-master1c2691.netlify.app/">
+        {projects.map((project, index) => (
+          <SwiperSlide key={index} onClick={() => setSelectedProject(project)}>
             <img
-              src={GymApp}
-              alt=""
-              width="400rem"
-              height="400rem"
+              src={project.img}
+              alt={project.title}
               style={{
-                filter: "drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))",
+                width: "100%",
+                height: "15rem",
+                objectFit: "cover",
                 borderRadius: "15px",
+                filter: "drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))",
+                cursor: "pointer"
               }}
             />
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="https://netflix-movieapp.web.app/">
-            <img
-              src={NetflixClone}
-              alt=""
-              width="480rem"
-              height="400rem"
-              style={{
-                filter: "drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))",
-                borderRadius: "15px",
-              }}
-            />
-          </a>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
+
+      <PortfolioModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
+      />
     </div>
   );
 };
