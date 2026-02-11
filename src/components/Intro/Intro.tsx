@@ -17,7 +17,7 @@ import Crown from "../../assets/img/crown.png";
 
 const Intro = () => {
   // Transition
-  const transition = { duration: 2, type: "spring" };
+  const transition = { duration: 2, type: "spring" } as const;
 
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -36,7 +36,7 @@ const Intro = () => {
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
-        <button className="button i-button">Hire me</button>
+          <button className="button i-button">Hire me</button>
         </Link>
         {/* social icons */}
         <div className="i-icons">
@@ -83,7 +83,7 @@ const Intro = () => {
         >
           <FloatingDiv img={thumbup} text1="ReactJs" text2="Developer" />
         </motion.div>
-        
+
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
         <div
           className="blur"

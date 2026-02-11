@@ -1,9 +1,16 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({emoji, heading, detail, color}) => {
+interface CardProps {
+  emoji: string;
+  heading: string;
+  detail: string;
+  color?: string;
+}
+
+const Card = ({ emoji, heading, detail, color }: CardProps) => {
   return (
-    <div className="card" style={{borderColor: {color}}}> 
+    <div className="card" style={{ borderColor: color }}>
       <img src={emoji} alt="" />
       <span>{heading}</span>
       <span>{detail}</span>

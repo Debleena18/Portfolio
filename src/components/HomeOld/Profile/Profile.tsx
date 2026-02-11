@@ -15,21 +15,21 @@ const Profile = () => {
             <div className="colz-icon">
               <InstagramIcon
                 sx={{ color: pink[500] }}
-                onClick={(e) =>
-                  (window.location.href =
-                    "https://www.instagram.com/i_m_debleena_sarkar/")
+                onClick={() =>
+                (window.location.href =
+                  "https://www.instagram.com/i_m_debleena_sarkar/")
                 }
               />
               <GitHubIcon
-                onClick={(e) =>
+                onClick={() =>
                   (window.location.href = "https://github.com/Debleena18")
                 }
               />
               <LinkedInIcon
                 color="primary"
-                onClick={(e) =>
-                  (window.location.href =
-                    "https://www.linkedin.com/in/debleena-sarkar-69172b175/")
+                onClick={() =>
+                (window.location.href =
+                  "https://www.linkedin.com/in/debleena-sarkar-69172b175/")
                 }
               />
             </div>

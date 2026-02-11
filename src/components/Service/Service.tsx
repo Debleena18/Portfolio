@@ -17,23 +17,23 @@ const Service = () => {
   const transition = {
     duration: 1,
     type: "spring",
-  };
+  } as const;
 
   return (
     <div className="services">
       <div className="awesome">
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>service</span>
-        <spane>
+        <span>
           I have worked for our client ASDA (UK retail unit of Walmart)
           <br />
           and have successfully delivered the projects.
-        </spane>
+        </span>
         <a href={Resume} download="Debleena resume.pdf">
           <button className="button s-button">Download CV</button>
         </a>
         <Link to="contact" smooth={true} spy={true}>
-        <button className="button s-button">Hire Me</button>
+          <button className="button s-button">Hire Me</button>
         </Link>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
@@ -44,12 +44,12 @@ const Service = () => {
           whileInView={{ left: "14rem" }}
           transition={transition}
         >
-        <div style={{left:'20rem'}}>
-          <Card
-            emoji={Glasses}
-            heading={"Development"}
-            detail={"Developed TMS App, BWS Markdown App for our client"}
-          />
+          <div style={{ left: '20rem' }}>
+            <Card
+              emoji={Glasses}
+              heading={"Development"}
+              detail={"Developed TMS App, BWS Markdown App for our client"}
+            />
           </div>
         </motion.div>
         {/* second card */}
@@ -58,12 +58,12 @@ const Service = () => {
           whileInView={{ left: "-4rem" }}
           transition={transition}
         >
-        <div style={{top:'12rem', left:'4rem'}}>
-          <Card
-            emoji={HeartEmoji}
-            heading={"Skills"}
-            detail={"Html, Css, JavaScript, ReactJs, SQL"}
-          />
+          <div style={{ top: '12rem', left: '4rem' }}>
+            <Card
+              emoji={HeartEmoji}
+              heading={"Skills"}
+              detail={"Html, Css, JavaScript, ReactJs, SQL"}
+            />
           </div>
         </motion.div>
         {/* 3rd */}
@@ -72,22 +72,22 @@ const Service = () => {
           whileInView={{ left: "12rem" }}
           transition={transition}
         >
-         <div style={{top:'19rem', left:'20rem'}}>
-          <Card
-            emoji={Humble}
-            heading={"Database Migration"}
-            detail={
-              "Worked on the Db Migration of NewsFlash App from Maria Db to Axure SQL and successfully deliver it."
-            }
-            color="rgba(252, 166, 31, 0.45)"
-          />
+          <div style={{ top: '19rem', left: '20rem' }}>
+            <Card
+              emoji={Humble}
+              heading={"Database Migration"}
+              detail={
+                "Worked on the Db Migration of NewsFlash App from Maria Db to Axure SQL and successfully deliver it."
+              }
+              color="rgba(252, 166, 31, 0.45)"
+            />
           </div>
         </motion.div>
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}
         ></div>
-        
+
       </div>
     </div>
   );

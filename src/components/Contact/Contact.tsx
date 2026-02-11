@@ -5,35 +5,36 @@ import { themeContext } from "../../Context";
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
   const [done, setDone] = useState(false);
   const [text, setText] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // logged into the emailjs documents
-    emailjs
-      .sendForm(
-        "service_mnlpocp",
-        "template_e52nnsk",
-        form.current,
-        "S2T381xxZlzIZpAGU"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setDone(true);
-          setText('');
-          setEmail('');
-          setMessage('');
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_mnlpocp",
+          "template_e52nnsk",
+          form.current,
+          "S2T381xxZlzIZpAGU"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setDone(true);
+            setText("");
+            setEmail("");
+            setMessage("");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   return (

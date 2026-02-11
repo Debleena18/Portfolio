@@ -13,7 +13,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
+      <span style={{ color: darkMode ? 'white' : '' }}>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* slider */}
@@ -28,9 +28,11 @@ const Portfolio = () => {
             src={Ecommerce}
             alt=""
             width="400rem"
-            heigh="400rem"
-            filter="drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))"
-            border-radius="15px"
+            height="400rem"
+            style={{
+              filter: "drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))",
+              borderRadius: "15px",
+            }}
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -39,9 +41,11 @@ const Portfolio = () => {
               src={GymApp}
               alt=""
               width="400rem"
-              heigh="400rem"
-              filter="drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))"
-              border-radius="15px"
+              height="400rem"
+              style={{
+                filter: "drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))",
+                borderRadius: "15px",
+              }}
             />
           </a>
         </SwiperSlide>
@@ -51,9 +55,11 @@ const Portfolio = () => {
               src={NetflixClone}
               alt=""
               width="480rem"
-              heigh="400rem"
-              filter="drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))"
-              border-radius="15px"
+              height="400rem"
+              style={{
+                filter: "drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25))",
+                borderRadius: "15px",
+              }}
             />
           </a>
         </SwiperSlide>
