@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Toggle.css";
-import WbSunnyIcon from '@material-ui/icons/WbSunny';
-import Brightness3Icon from '@material-ui/icons/Brightness3';
+import WbSunnyIcon from '@mui/icons-material/WbSunny';
+import Brightness3Icon from '@mui/icons-material/Brightness3';
 // import Moon from "@iconscout/react-unicons/icons/uil-moon";
 // import Sun from "@iconscout/react-unicons/icons/uil-sun";
 import { themeContext } from "../../Context";
